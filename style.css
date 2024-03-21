@@ -1,6 +1,6 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 body {
   background-color: burlywood;
 }
@@ -9,7 +9,7 @@ form {
   border: solid 2px black;
   width: 80%;
   margin: auto;
-  margin-top: 20em;
+  margin-top: 10em;
   background-color: rgb(232, 239, 14);
 }
 
@@ -20,9 +20,8 @@ form {
   margin: 20px;
 }
 
-#message > textarea {
-  flex: 1;
-  min-width: 18em;
+textarea {
+  max-width: 100%;
 }
 
 #contact {
@@ -47,4 +46,41 @@ form {
   background: gray;
   color: white;
   border: 0;
+}
+
+/* GRID  */
+#container {
+  display: grid;
+  grid-template-rows: 200px;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+#containerTwo {
+  display: grid;
+  grid-template-rows: 200px;
+  grid-template-columns: 620px;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+#one {
+  background-color: red;
+  border: 2px solid rgb(244, 243, 243);
+}
+
+#two {
+  background-color: rgb(0, 8, 255);
+  border: 2px solid black;
+}
+
+#three {
+  background-color: rgb(26, 255, 0);
+  border: 2px solid rgb(132, 1, 1);
+}
+
+#four {
+  background-color: rgb(242, 255, 0);
+  border: 2px solid rgb(37, 203, 120);
 }
