@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: burlywood;
+}
+form {
+  display: flex;
+  border: solid 2px black;
+  width: 80%;
+  margin: auto;
+  margin-top: 20em;
+  background-color: rgb(232, 239, 14);
+}
+
+#message {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+  margin: 20px;
+}
+
+#message > textarea {
+  flex: 1;
+  min-width: 18em;
+}
+
+#contact {
+  flex: 1;
+  order: 1;
+  margin-right: 2em;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#contact input {
+  width: 100%;
+}
+
+#contact input,
+#contact button {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+#contact button {
+  background: gray;
+  color: white;
+  border: 0;
+}
